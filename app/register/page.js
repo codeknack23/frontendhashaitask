@@ -69,7 +69,7 @@ export default function RegisterPage() {
         </button>
         <p className="text-sm">
           Already have an account?{" "}
-          <a href="/login" className="text-blue-500">
+          <a href="/" className="text-blue-500">
             Login
           </a>
         </p>
