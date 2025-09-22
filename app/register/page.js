@@ -11,7 +11,7 @@ export default function RegisterPage() {
   const [submitting, setSubmitting] = useState(false); // Loading state
   const router = useRouter();
 
-  const API_URL = "https://leadsmanagementsystem.onrender.com";
+  const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,7 +20,7 @@ export default function RegisterPage() {
       return;
     }
 
-    setSubmitting(true); // Start loading
+    setSubmitting(true); 
     try {
       await axios.post(`${API_URL}/api/auth/register`, { email, password });
       alert("Registration successful! Please login.");
@@ -28,7 +28,7 @@ export default function RegisterPage() {
     } catch (err) {
       alert("Registration failed: " + (err.response?.data?.error || "Unknown error"));
     } finally {
-      setSubmitting(false); // Stop loading
+      setSubmitting(false); 
     }
   };
 
