@@ -15,7 +15,7 @@ export default function LeadsPage() {
 
   const router = useRouter();
   const token = typeof window !== "undefined" ? localStorage.getItem("token") : null;
-  const API_URL = process.env.NEXT_PUBLIC_API_URL; 
+  const API_URL = "https://leadsmanagementsystem.onrender.com"; 
 
   
   const handleLogout = () => {

@@ -10,7 +10,7 @@ export default function LoginPage() {
   const [submitting, setSubmitting] = useState(false); // Loading state
   const router = useRouter();
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL;
+  const API_URL = "https://leadsmanagementsystem.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
