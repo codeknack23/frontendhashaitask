@@ -24,7 +24,7 @@ export default function RegisterPage() {
     try {
       await axios.post(`${API_URL}/api/auth/register`, { email, password });
       alert("Registration successful! Please login.");
-      router.push("/login");
+      router.push("/");
     } catch (err) {
       alert("Registration failed: " + (err.response?.data?.error || "Unknown error"));
     } finally {
