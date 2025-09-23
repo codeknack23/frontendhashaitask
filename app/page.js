@@ -57,7 +57,7 @@ export default function LoginPage() {
           {submitting ? "Logging in..." : "Login"}
         </button>
         <p className="text-sm">
-          Don&apost have an account?{" "}
+          Dont have an account?{" "}
           <a href="/register" className="text-blue-500">
             Register
           </a>
