@@ -28,7 +28,7 @@ export default function RegisterPage() {
       alert("Registration successful! Please login.");
       router.push("/");
     } catch (err) {
-      alert("Registration failed: " + (err.response?.data?.error || "Unknown error"));
+      alert("Registration failed: " + (err.response?.data?.error || "Unknown error."));
     } finally {
       setSubmitting(false); 
     }
